@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Banner */
+.banner {
+    background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?fit=crop&w=1500&q=80');
+    background-size: cover;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+/* Menú */
+.menu {
+    background-color: #222;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.menu li {
+    margin: 0 15px;
+}
+.menu a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.menu a:hover {
+    background-color: #ffcc00;
+    color: #222;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Secciones */
+.seccion {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Formularios */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formulario input, .formulario textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.formulario button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.formulario button:hover {
+    background-color: #e6b800;
+}
+
+/* Cuento */
+.cuento-box {
+    margin-top: 20px;
+    background: #fff9d6;
+    border-left: 4px solid #ffcc00;
+    padding: 15px;
+    border-radius: 5px;
+    font-style: italic;
+}

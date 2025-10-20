@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicStore - Tienda Online de Discos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner -->
+    <header class="banner">
+        <div class="logo">
+            <h1>MusicStore</h1>
+        </div>
+        <div class="banner-texto">
+            <h2>Tu tienda online de discos y vinilos</h2>
+        </div>
+    </header>
+
+    <!-- Menú -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#tienda">Nuestra Tienda</a></li>
+            <li><a href="#buscar">Buscar</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contáctenos</a></li>
+            <li><a href="#cotizacion">Cotización</a></li>
+            <li><a href="#cuento">Generador de Cuentos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Tienda -->
+    <section id="tienda" class="seccion">
+        <h2>🎶 Nuestra Tienda On-line</h2>
+        <p>Bienvenido a <strong>MusicStore</strong>, donde encontrarás los mejores discos y vinilos de tus artistas favoritos.</p>
+        <h3>👥 Administrado por:</h3>
+        <ul class="integrantes">
+            <li>Andrés Ocampo</li>
+        </ul>
+    </section>
+
+    <!-- Sección Buscar -->
+    <section id="buscar" class="seccion">
+        <h2>🔍 Buscar en la Tienda</h2>
+        <p>Puedes buscar por <strong>Disco</strong>, <strong>Canción</strong> o <strong>Cantante</strong>.</p>
+
+        <div class="buscador">
+            <select id="tipo-busqueda">
+                <option value="disco">Disco</option>
+                <option value="cancion">Canción</option>
+                <option value="cantante">Cantante</option>
+            </select>
+            <input type="text" id="campo-busqueda" placeholder="Ej: Thriller, Beat It, Michael Jackson...">
+            <button>Buscar</button>
+        </div>
+
+        <div class="resultados">
+            <h3>Resultados:</h3>
+
+            <div class="disco">
+                <img src="https://m.media-amazon.com/images/I/71K9CbNZPsL._UF1000,1000_QL80_.jpg" alt="Thriller">
+                <div class="info-disco">
+                    <h4>Disco: Thriller - Michael Jackson</h4>
+                    <p><strong>Clave:</strong> CD001</p>
+                    <p><strong>Tipo:</strong> CD Individual</p>
+                    <p><strong>Compañía:</strong> Epic Records</p>
+                    <p><strong>PVP:</strong> $59.900</p>
+                    <p><strong>Ejemplares disponibles:</strong> 8 unidades</p>
+                    <p><strong>Pistas:</strong></p>
+                    <ul>
+                        <li>1. Wanna Be Startin’ Somethin’</li>
+                        <li>2. Thriller</li>
+                        <li>3. Beat It</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Catálogo -->
+    <section id="catalogo" class="seccion">
+        <h2>🛒 Catálogo de Discos</h2>
+        <p>Explora algunos de nuestros discos destacados:</p>
+
+        <div class="catalogo">
+            <div class="card">
+                <h4>Abbey Road - The Beatles</h4>
+                <p><strong>Disponibles:</strong> 12</p>
+                <p><strong>PVP:</strong> $69.900</p>
+                <button>Ver detalles</button>
+            </div>
+            <div class="card">
+                <h4>Back in Black - AC/DC</h4>
+                <p><strong>Disponibles:</strong> 7</p>
+                <p><strong>PVP:</strong> $64.900</p>
+                <button>Ver detalles</button>
+            </div>
+            <div class="card">
+                <h4>The Dark Side of the Moon - Pink Floyd</h4>
+                <p><strong>Disponibles:</strong> 10</p>
+                <p><strong>PVP:</strong> $74.900</p>
+                <button>Ver detalles</button>
+            </div>
+            <div class="card">
+                <h4>1989 - Taylor Swift</h4>
+                <p><strong>Disponibles:</strong> 15</p>
+                <p><strong>PVP:</strong> $59.900</p>
+                <button>Ver detalles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="seccion">
+        <h2>💿 Nuestros Servicios</h2>
+        <div class="servicios">
+            <div class="servicio">
+                <h3>Venta y Distribución</h3>
+                <p>Discos y vinilos originales de artistas nacionales e internacionales.</p>
+            </div>
+            <div class="servicio">
+                <h3>Asesoría Musical</h3>
+                <p>Te ayudamos a descubrir música según tus gustos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion">
+        <h2>📞 Contáctenos</h2>
+        <p><strong>WhatsApp:</strong> +57 300 123 4567</p>
+        <p><strong>Celular:</strong> +57 310 765 4321</p>
+        <p><strong>Dirección:</strong> Calle 45 #10-20, Medellín, Colombia</p>
+    </section>
+
+    <!-- Cotización -->
+    <section id="cotizacion" class="seccion">
+        <h2>📝 Solicitud de Cotización</h2>
+        <form class="formulario">
+            <label>Nombre completo:</label>
+            <input type="text" required>
+            
+            <label>Correo electrónico:</label>
+            <input type="email" required>
+            
+            <label>Producto de interés:</label>
+            <input type="text" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Generador de cuentos -->
+    <section id="cuento" class="seccion">
+        <h2>📚 Generador de Cuentos</h2>
+        <form class="formulario" id="formCuento" onsubmit="generarCuento(event)">
+            <label>Nombres y Apellidos:</label>
+            <input type="text" id="nombreCuento" required>
+            <label>Apodo:</label>
+            <input type="text" id="apodo" required>
+            <label>Color de Cabello:</label>
+            <input type="text" id="cabello" required>
+            <label>Color de Ojos:</label>
+            <input type="text" id="ojos" required>
+            <label>Edad:</label>
+            <input type="number" id="edad" required>
+            <label>Hobby:</label>
+            <input type="text" id="hobby" required>
+            <button type="submit">Continuar</button>
+        </form>
+        <div id="resultadoCuento" class="cuento-box"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 MusicStore - Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function generarCuento(event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombreCuento').value;
+            const apodo = document.getElementById('apodo').value;
+            const cabello = document.getElementById('cabello').value;
+            const ojos = document.getElementById('ojos').value;
+            const edad = document.getElementById('edad').value;
+            const hobby = document.getElementById('hobby').value;
+
+            document.getElementById('resultadoCuento').innerHTML = `
+                <p><strong>📖 Inicio:</strong><br>
+                En un pequeño pueblo rodeado de montañas y discos antiguos vivía <strong>${nombre}</strong>, 
+                aunque todos lo llamaban con cariño <strong>${apodo}</strong>. Su cabello color <strong>${cabello}</strong> 
+                brillaba con la luz del amanecer, y sus ojos <strong>${ojos}</strong> reflejaban una curiosidad inagotable. 
+                A sus <strong>${edad}</strong> años, su pasatiempo favorito era <strong>${hobby}</strong>, una actividad que le 
+                permitía soñar despierto mientras la música llenaba cada rincón de su habitación.</p>
+
+                <p><strong>🎵 Nudo:</strong><br>
+                Una tarde, mientras caminaba por una vieja tienda de vinilos, encontró un disco cubierto de polvo. 
+                No tenía portada, solo una etiqueta dorada con un mensaje misterioso: 
+                <em>“Quien escuche esta melodía descubrirá su verdadero destino”</em>. 
+                Intrigado, <strong>${apodo}</strong> lo llevó a casa, lo colocó en su antiguo tocadiscos y, 
+                al sonar la primera nota, el mundo a su alrededor comenzó a transformarse. 
+                Las paredes desaparecieron, el viento olía a nostalgia, y frente a él apareció un camino hecho de pentagramas y notas musicales flotando en el aire.  
+                Sin miedo y movido por su pasión por <strong>${hobby}</strong>, decidió seguir aquel sendero mágico.</p>
+
+                <p><strong>🌟 Desenlace:</strong><br>
+                Al final del camino, halló un escenario iluminado, y en él, versiones jóvenes de los artistas más legendarios lo observaban en silencio. 
+                Una voz le susurró: <em>“La música no solo se escucha, se vive, se siente y se comparte”</em>. 
+                En ese instante comprendió que su destino no era simplemente disfrutar de la música, 
+                sino inspirar a otros con ella. El escenario se desvaneció lentamente, dejándolo nuevamente en su habitación.  
+                Desde ese día, <strong>${apodo}</strong> nunca volvió a escuchar un disco de la misma forma. 
+                Cada melodía se convirtió en una historia, cada canción en una aventura, y supo que, mientras existiera la música, 
+                su propio cuento jamás terminaría.</p>`;
+        }
+    </script>
+</body>
+</html>
